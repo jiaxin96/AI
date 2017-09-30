@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+InsecureRequestWarning	../code/tools.py	/^from requests.packages.urllib3.exceptions import InsecureRequestWarning$/;"	kind:namespace	line:19
+ans	../code/bfsFind.py	/^    ans=optBfs('https:\/\/www.hao123.com\/', 'http:\/\/sports.sina.com.cn\/g\/ucl\/fixtures.html')$/;"	kind:variable	line:37
+bfsFind.py	../code/bfsFind.py	1;"	kind:file	line:1
+datetime	../code/bfsFind.py	/^from datetime import datetime$/;"	kind:namespace	line:18
+endTime	../code/bfsFind.py	/^    endTime = datetime.now()$/;"	kind:variable	line:38
+etree	../code/tools.py	/^from lxml import etree$/;"	kind:namespace	line:18
+getAllLink	../code/tools.py	/^def getAllLink(targetLink,sourceLink, *visitedLinks):$/;"	kind:function	line:23
+getDis	../code/tools.py	/^def getDis(targetLink, curLink):$/;"	kind:function	line:55
+optBfs	../code/bfsFind.py	/^def optBfs(startLink,targetList):$/;"	kind:function	line:20
+requests	../code/tools.py	/^import requests$/;"	kind:namespace	line:17
+startTime	../code/bfsFind.py	/^    startTime = datetime.now()$/;"	kind:variable	line:36
+testRequest.py	../code/testRequest.py	1;"	kind:file	line:1
+tools.py	../code/tools.py	1;"	kind:file	line:1

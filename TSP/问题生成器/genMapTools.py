@@ -6,7 +6,7 @@
 # Created Date: Saturday, September 30th 2017, 7:50:25 pm
 # Author: JX
 # -----
-# Last Modified: Sun Oct 01 2017
+# Last Modified: Mon Oct 02 2017
 # Modified By: JX
 # -----
 # Copyright (c) 2017 SYSU-SDCS-RJX
@@ -22,10 +22,10 @@ def getMap():
     INF_NUM =  999
 
     # 节点数
-    node_num = 40
+    node_num = 6
 
     #每2个之间相互链接的概率节点
-    connectedProbability = 0.3
+    connectedProbability = 0.6
 
     # 生成随机权重的邻接矩阵
     tspMap = np.ones((node_num,node_num))*INF_NUM
@@ -47,15 +47,33 @@ def testConnetc(map):
     for i in range(nodeNum):
         if (visited[i] == 0):
             dfs(map, nodeNum, visited, i);
+            break
+    if (np.sum(visited) == nodeNum):
+        return True
+    else:
+        return False
+def testCycle():
+    nodeNum = np.shape(map)[0]
+    visited = [0 for i in range(nodeNum)]
+    for i in range(nodeNum):
+        if (visited[i] == 0):
+            dfs(map, nodeNum, visited, i);
+            break
+    if (np.sum(visited) == nodeNum):
+        return True
+    else:
+        return False
 
 def dfs(map, nodeNum, visited, pos):
+    INF_NUM =  999    
     visited[pos] = 1
     for i in range(nodeNum):
-        
+        if (visited[i] == 0 and map[pos, i] != INF_NUM):
+            dfs(map, nodeNum, visited, i)
         
 
 def getTstMap():
-    map  = getMap()
-    while(testConnetc(map) == False):
-        map  = getMap()
-    return map
+    Tmap  = getMap()
+    while(testConnetc(Tmap) == False):
+        Tmap  = getMap()
+    return Tmap

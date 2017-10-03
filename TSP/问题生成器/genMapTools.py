@@ -18,15 +18,15 @@
 import numpy as np
 
 #无限的值
-INF_NUM =  999
+INF_NUM = 999
 
 
 def getMap():
     # 节点数
-    node_num = 4
+    node_num = 6
 
     # 每2个之间相互链接的概率节点
-    connectedProbability = 0.7
+    connectedProbability = 0.8
 
     # 生成随机权重的邻接矩阵
     tspMap = np.ones((node_num, node_num))*INF_NUM

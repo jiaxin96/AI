@@ -20,6 +20,8 @@ import numpy as np
 
 
 def calPrimVal(vexs):
+    if len(vexs) == 0:
+        return 0
     node_num = np.shape(vexs)[0]
     mst = np.zeros(node_num)               # 连通分量，初始只有第一个顶点，当全部元素为1后，说明连通分量已经包含所有顶点
     lowcost = vexs[0].tolist()

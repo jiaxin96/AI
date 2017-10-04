@@ -21,9 +21,15 @@ import numpy as np
 INF_NUM = 999
 
 
+# 节点的个数
+node_num = 5
+
+
+#地理分布边长 km
+geo_len = 100
+
+
 def getMap():
-    # 节点数
-    node_num = 5
 
     # 每2个之间相互链接的概率节点
     connectedProbability = 1
@@ -94,17 +100,26 @@ def getTspMap():
     return Tmap
 
 
-# def test():
-#     a = getTspMap()
-#     print(a)
-#     visited = [0 for i in range(len(a))]
-#     visited[1] = 1
-#     visited[2] = 1    
-#     print(genUnvisitedMap(a, visited))
+def getDistribution():
+    geo_map = []
+    for i in range(node_num):
+        x = np.random.randint(0, geo_len)
+        y = np.random.randint(0, geo_len)
+        geo_map.append((i, x, y))
+    return geo_map
+
+def test():
+    a = getTspMap()
+    print(a)
+    visited = [0 for i in range(len(a))]
+    visited[1] = 1
+    visited[2] = 1    
+    print(genUnvisitedMap(a, visited))
+    print(getDistribution())
 
 
-# def main():
-#     test()
+def main():
+    test()
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()

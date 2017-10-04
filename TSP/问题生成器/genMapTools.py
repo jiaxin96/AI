@@ -22,7 +22,7 @@ INF_NUM = 999
 
 
 # 节点的个数
-node_num = 5
+node_num = 6
 
 
 #地理分布边长 km

@@ -1,0 +1,85 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp panel1:::p::p, space ::43:x}}"
+			"$verticalGroup": "par l {comp panel1::t:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, comp BoardPanel:::p::p, space :p:29:p, par l {seq {par l {par l:l::p {comp label2::::67:x, comp label1:::::x}, seq l {comp label5:::p::p, space u:::p, comp label6:::p::p}}, space :38::x}, seq {comp label7::::83:x, space :::p}}}}"
+				"$verticalGroup": "par l {seq l {space :p:123:p, comp label1:::p:48:p, space s:::p, comp label2:::p:55:p, space :p:98:p, par b {comp label5::b:p::p, comp label6::b:p::p}, space s:::p, comp label7::::201:x, space ::28:x}, seq l {comp BoardPanel:::p::p, space :0:9:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Person1:"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Person2:"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Step:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Back"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Gobang"
+					"horizontalAlignment": 0
+					"font": new java.awt.Font( "Cantarell", 1, 23 )
+					"enabled": false
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {space :0:600:x}"
+					"$verticalGroup": "par l {space :0:600:x}"
+				} ) {
+					name: "BoardPanel"
+					"preferredSize": new java.awt.Dimension( 600, 600 )
+				} )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "Game"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "FirstStart"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "firststartMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "Backhand"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "BackHandMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "BackStep"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "roolBackMousePressed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "Help"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem4"
+						"text": "About"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "HelpMenuAboutMouseClicked", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 775, 665 )
+		} )
+	}
+}

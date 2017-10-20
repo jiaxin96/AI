@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @File  : climbAndsimulatedAnnealing.py
+# @File  : climbAndSimulatedAnnealing.py
 # @Author: https://github.com/jiaxin96
 # @Date  : 10/19/17
 # @Desc  : 学习使用

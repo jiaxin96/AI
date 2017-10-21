@@ -17,22 +17,34 @@
     <SUITE FILE_PATH="coverage/$problemGenAndTools.coverage" NAME="problemGenAndTools Coverage Results" MODIFIED="1508512620789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/八数码" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="problemGenAndTools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/八数码/problemGenAndTools.py">
+    <leaf>
+      <file leaf-file-name="repeatTest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/八皇后/repeatTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="506">
+              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+              <folding>
+                <element signature="e#147#190#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="climbAndsimulatedAnnealing.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/八数码/climbAndsimulatedAnnealing.py">
+        <entry file="file://$PROJECT_DIR$/八皇后/climbAndsimulatedAnnealing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="117" column="15" lean-forward="false" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
+            <state relative-caret-position="-1562">
+              <caret line="43" column="86" lean-forward="true" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="problemGenAndTools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/八皇后/problemGenAndTools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -53,11 +65,15 @@
         <option value="$PROJECT_DIR$/八皇后/problemGen.py" />
         <option value="$PROJECT_DIR$/八皇后/problemGenAndTools.py" />
         <option value="$PROJECT_DIR$/八皇后/climb.py" />
-        <option value="$PROJECT_DIR$/八皇后/climbAndsimulatedAnnealing.py" />
         <option value="$PROJECT_DIR$/八皇后/climbAndSimulatedAnnealing.py" />
-        <option value="$PROJECT_DIR$/common/drawLines.py" />
         <option value="$PROJECT_DIR$/八数码/problemGenAndTools.py" />
         <option value="$PROJECT_DIR$/八数码/climbAndsimulatedAnnealing.py" />
+        <option value="$PROJECT_DIR$/common/drawLines.py" />
+        <option value="$PROJECT_DIR$/common/testDraw.py" />
+        <option value="$PROJECT_DIR$/common/draw.py" />
+        <option value="$PROJECT_DIR$/八数码/repeatTest.py" />
+        <option value="$PROJECT_DIR$/八皇后/climbAndsimulatedAnnealing.py" />
+        <option value="$PROJECT_DIR$/八皇后/repeatTest.py" />
       </list>
     </option>
   </component>
@@ -89,28 +105,28 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="爬山法" type="b2602c69:ProjectViewProjectNode" />
-              <item name="爬山法" type="462c0819:PsiDirectoryNode" />
+              <item name="爬山法和模拟退火" type="b2602c69:ProjectViewProjectNode" />
+              <item name="爬山法和模拟退火" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="爬山法" type="b2602c69:ProjectViewProjectNode" />
-              <item name="爬山法" type="462c0819:PsiDirectoryNode" />
-              <item name="八数码" type="462c0819:PsiDirectoryNode" />
+              <item name="爬山法和模拟退火" type="b2602c69:ProjectViewProjectNode" />
+              <item name="爬山法和模拟退火" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="爬山法" type="b2602c69:ProjectViewProjectNode" />
-              <item name="爬山法" type="462c0819:PsiDirectoryNode" />
+              <item name="爬山法和模拟退火" type="b2602c69:ProjectViewProjectNode" />
+              <item name="爬山法和模拟退火" type="462c0819:PsiDirectoryNode" />
               <item name="八皇后" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -131,22 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.climbAndsimulatedAnnealing (1)">
-    <configuration name="Unittests in climbAndSimulatedAnnealing.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/八皇后" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="爬山法" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/八皇后/climbAndSimulatedAnnealing.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
+  <component name="RunManager" selected="Python.climbAndsimulatedAnnealing">
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -328,7 +329,25 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="problemGenAndTools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="repeatTest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/八皇后" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="爬山法" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/八皇后/repeatTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="repeatTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -341,23 +360,43 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="爬山法" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/八数码/problemGenAndTools.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/八数码/repeatTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in climbAndSimulatedAnnealing.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python.climbAndsimulatedAnnealing" />
-      <item index="2" class="java.lang.String" itemvalue="Python.problemGenAndTools" />
-      <item index="3" class="java.lang.String" itemvalue="Python.climbAndsimulatedAnnealing (1)" />
+    <configuration name="testDraw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="爬山法" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/testDraw.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.climbAndsimulatedAnnealing" />
+      <item index="1" class="java.lang.String" itemvalue="Python.climbAndsimulatedAnnealing (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.repeatTest" />
+      <item index="3" class="java.lang.String" itemvalue="Python.testDraw" />
+      <item index="4" class="java.lang.String" itemvalue="Python.repeatTest (1)" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.climbAndsimulatedAnnealing (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.climbAndsimulatedAnnealing" />
-        <item index="2" class="java.lang.String" itemvalue="Python.problemGenAndTools" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in climbAndSimulatedAnnealing.py" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.climbAndsimulatedAnnealing" />
+        <item index="1" class="java.lang.String" itemvalue="Python.repeatTest (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.repeatTest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testDraw" />
+        <item index="4" class="java.lang.String" itemvalue="Python.climbAndsimulatedAnnealing (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -386,16 +425,15 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="266" y="58" width="1920" height="1044" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="36" width="1920" height="1044" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12913553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11152615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26310045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12059765" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28820962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12059765" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995633" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -418,7 +456,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/八数码/climbAndsimulatedAnnealing.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -435,7 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="989">
           <caret line="43" column="92" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="92" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -443,7 +487,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="e#163#198#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -463,7 +509,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/八皇后/climbAndSimulatedAnnealing.py" />
-    <entry file="file://$PROJECT_DIR$/common/drawLines.py" />
+    <entry file="file://$PROJECT_DIR$/common/draw.py" />
     <entry file="file://$PROJECT_DIR$/八数码/problemGenAndTools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -479,7 +525,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/drawLines.py" />
+    <entry file="file://$PROJECT_DIR$/common/draw.py" />
     <entry file="file://$PROJECT_DIR$/八皇后/climbAndSimulatedAnnealing.py" />
     <entry file="file://$PROJECT_DIR$/八皇后/problemGenAndTools.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -602,27 +648,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/八皇后/genProblem.py" />
     <entry file="file://$PROJECT_DIR$/八皇后/genProblem.py" />
-    <entry file="file://$PROJECT_DIR$/common/drawLines.py" />
     <entry file="file://$PROJECT_DIR$/八皇后/climbAndSimulatedAnnealing.py" />
-    <entry file="file://$PROJECT_DIR$/八皇后/problemGenAndTools.py">
+    <entry file="file://$PROJECT_DIR$/common/testDraw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="345">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/八皇后/climbAndsimulatedAnnealing.py">
+    <entry file="file://$PROJECT_DIR$/common/draw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="89" column="24" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="414">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="e#146#177#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/八数码/problemGenAndTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="0">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
@@ -630,8 +677,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/八数码/climbAndsimulatedAnnealing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="117" column="15" lean-forward="false" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
+        <state relative-caret-position="102">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="e#163#198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/八数码/repeatTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="29" column="92" lean-forward="false" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
+          <folding>
+            <element signature="e#147#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/八皇后/problemGenAndTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/八皇后/repeatTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#147#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/八皇后/climbAndsimulatedAnnealing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1562">
+          <caret line="43" column="86" lean-forward="true" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
           <folding />
         </state>
       </provider>

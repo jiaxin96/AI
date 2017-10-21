@@ -14,7 +14,7 @@ from datetime import datetime
 
 def schdule(time_count):
     init_temperature = 1000
-    coolingRate = 0.96
+    coolingRate = 0.996
     return  init_temperature*(coolingRate**time_count)
 
 def simulated_annealing(initBoard):
@@ -24,8 +24,8 @@ def simulated_annealing(initBoard):
     node_num = 0
     row_index = [x for x in range(8)]
     time_count = 0
-
-    while True:
+    temperature = schdule(0)
+    while temperature > 0.15:
         temperature = schdule(time_count)
         time_count += 1
 
@@ -46,10 +46,9 @@ def simulated_annealing(initBoard):
                     break;
             if (len(neighbor) != 0):
                 break
-        if (len(neighbor) == 0):
-            local_smallest = cur_board
-            break
-        cur_board = neighbor[0]
+        if (len(neighbor) != 0):
+            cur_board = neighbor[0]
+        local_smallest = cur_board
     return  local_smallest, step , node_num
 
 
@@ -131,6 +130,8 @@ def simple_climb_randomReboot(initBoard, node_num, rebootNum):
         cur_board = neighbor[0]
     if (pt.detectConfilctChessNum(local_smallest) != 0):
         rebootNum += 1
+        if rebootNum >= 20:
+            return local_smallest, step, node_num, rebootNum
         return simple_climb_randomReboot(initBoard, node_num, rebootNum)
     return  local_smallest, step, node_num, rebootNum
 
@@ -138,50 +139,78 @@ def simple_climb_randomReboot(initBoard, node_num, rebootNum):
 
 def once_test():
     initBoard = pt.gen()
+
+    ans = []
+
     sTime = datetime.now()
     (ansBoard, ansStep, node_num) = simple_climb_first_select(initBoard)
     eTime = datetime.now()
-    print("首选爬山法的结果为:")
-    print(ansBoard)
-    print("最终冲突数为:" + str(pt.detectConfilctChessNum(ansBoard)))
-    print("解的深度为:"+ str(ansStep))
-    print("生成节点数为:"+ str(node_num))
-    print("用时%dms"%(eTime-sTime).microseconds)
-    print("*"*50)
+    ans.append((pt.detectConfilctChessNum(ansBoard), ansStep, node_num, int((eTime-sTime).microseconds/1000)))
+
+
+    # print("首选爬山法的结果为:")
+    # print(ansBoard)
+    # print("最终冲突数为:" + str(pt.detectConfilctChessNum(ansBoard)))
+    # print("解的深度为:"+ str(ansStep))
+    # print("生成节点数为:"+ str(node_num))
+    # print("用时%dms"%((eTime-sTime).microseconds/1000))
+    # print("*"*50)
 
     sTime = datetime.now()
     (ansBoard, ansStep, node_num) = simple_climb_optimistic(initBoard)
     eTime = datetime.now()
-    print("最陡上升爬山法的结果为:")
-    print(ansBoard)
-    print("最终冲突数为:" + str(pt.detectConfilctChessNum(ansBoard)))
-    print("解的深度为:"+ str(ansStep))
-    print("生成节点数为:"+ str(node_num))
-    print("用时%dms"%(eTime-sTime).microseconds)
-    print("*"*50)
+    ans.append((pt.detectConfilctChessNum(ansBoard), ansStep, node_num, int((eTime-sTime).microseconds/1000)))
+
+    # print("最陡上升爬山法的结果为:")
+    # print(ansBoard)
+    # print("最终冲突数为:" + str(pt.detectConfilctChessNum(ansBoard)))
+    # print("解的深度为:"+ str(ansStep))
+    # print("生成节点数为:"+ str(node_num))
+    # print("用时%dms"%((eTime-sTime).microseconds/1000))
+    # print("*"*50)
 
     sTime = datetime.now()
     cur_node_num = 0
     (ansBoard, ansStep, node_num, reboot_num) = simple_climb_randomReboot(initBoard, 0, 0)
     eTime = datetime.now()
-    print("随机重启爬山法的结果为:")
-    print(ansBoard)
-    print("最终冲突数为:" + str(pt.detectConfilctChessNum(ansBoard)))
-    print("解的深度为:"+ str(ansStep))
-    print("生成节点数为:"+ str(node_num))
-    print("重启次数为:"+str(reboot_num))
-    print("用时%dms"%(eTime-sTime).microseconds)
-    print("*"*50)
+    ans.append((pt.detectConfilctChessNum(ansBoard), ansStep, node_num, int((eTime-sTime).microseconds/1000)))
+
+    # print("随机重启爬山法的结果为:")
+    # print(ansBoard)
+    # print("最终冲突数为:" + str(pt.detectConfilctChessNum(ansBoard)))
+    # print("解的深度为:"+ str(ansStep))
+    # print("生成节点数为:"+ str(node_num))
+    # print("重启次数为:"+str(reboot_num))
+    # print("用时%dms"%((eTime-sTime).microseconds/1000))
+    # print("*"*50)
 
     sTime = datetime.now()
     (ansBoard, ansStep, node_num) = simulated_annealing(initBoard)
     eTime = datetime.now()
+    ans.append((pt.detectConfilctChessNum(ansBoard), ansStep, node_num, int((eTime-sTime).microseconds/1000)))
+
+    # print("模拟退火法的结果为:")
+    # print(ansBoard)
+    # print("最终冲突数为:" + str(pt.detectConfilctChessNum(ansBoard)))
+    # print("解的深度为:"+ str(ansStep))
+    # print("生成节点数为:"+ str(node_num))
+    # print("用时%dms"%((eTime-sTime).microseconds/1000))
+
+    return ans
+def one_case_test():
+    initBoard = pt.gen()
+
+    sTime = datetime.now()
+    (ansBoard, ansStep, node_num) = simulated_annealing(initBoard)
+    eTime = datetime.now()
+
     print("模拟退火法的结果为:")
     print(ansBoard)
     print("最终冲突数为:" + str(pt.detectConfilctChessNum(ansBoard)))
     print("解的深度为:"+ str(ansStep))
     print("生成节点数为:"+ str(node_num))
-    print("用时%dms"%(eTime-sTime).microseconds)
+    print("用时%dms"%((eTime-sTime).microseconds/1000))
 
 if __name__ == '__main__':
-    once_test()
+    # once_test()
+    one_case_test()
